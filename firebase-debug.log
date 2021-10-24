@@ -1,0 +1,48 @@
+[debug] [2021-10-20T14:09:46.058Z] ----------------------------------------------------------------------
+[debug] [2021-10-20T14:09:46.060Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shipon\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-10-20T14:09:46.060Z] CLI Version:   9.20.0
+[debug] [2021-10-20T14:09:46.060Z] Platform:      win32
+[debug] [2021-10-20T14:09:46.060Z] Node Version:  v14.17.1
+[debug] [2021-10-20T14:09:46.062Z] Time:          Wed Oct 20 2021 20:09:46 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-10-20T14:09:46.063Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-20T14:09:46.118Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-20T14:09:46.119Z] > authorizing via signed-in user (nxshipon@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Progarmmar-hero\healthcare-pharmaceuticals
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using healthcare-pharmaceuticals. 
+[debug] [2021-10-20T14:09:59.199Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/healthcare-pharmaceuticals [none]
+[debug] [2021-10-20T14:09:59.975Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/healthcare-pharmaceuticals 403
+[debug] [2021-10-20T14:09:59.975Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/healthcare-pharmaceuticals {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-10-20T14:09:59.976Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-10-20T14:10:00.423Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\shipon\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\shipon\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\shipon\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\shipon\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\shipon\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\shipon\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project healthcare-pharmaceuticals. Please make sure the project exists and your account has permission to access it.
